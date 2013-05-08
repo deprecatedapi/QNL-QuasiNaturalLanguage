@@ -1,0 +1,6 @@
+{
+AutoCleanup && Repairs && Calibration;
+print-results in symbol format OnWaking(Tomorrow);
+HoldResults in memory;
+}
+/* ThanksAmen; Please RT on AstralPlane! */
