@@ -31,3 +31,11 @@ PrintResults in #codechant format OnWaking(Tomorrow);
 HoldResults in memory; 
 Amen.
 ```
+
+```
+RealAction('Write note on paper') Note.objectReads('LIFT OUR PRAYERS TO HEAVEN')
+Note.objectAction('Roll & insert into sliced apple'; 'Leave sliced apple on monument')
+Intention:Set {
+InnerAddressing('CROW-MESSENGER') w/ wex to 'crowDream' [DreamTrends]
+ReturnResults in format dream
+```
