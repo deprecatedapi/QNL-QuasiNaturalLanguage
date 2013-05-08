@@ -1,0 +1,16 @@
+{
+AV=Assign.Value;
+S1(AV=Theta.Waves);
+S2(AV=Spindle);
+S3(AV=Delta.Waves);
+S4(AV=Delta2);
+S5(AV=REM);
+RunSubroutine(AV=S1->S2->S3=TV);
+Stop;
+IF TV=0 THEN GOTO 8;
+ELSE Run.Subroutine(S4->S5);
+PRINT-(results.S5);
+(results-S5)(AV=D);
+IF D=1 THEN print-results In.Real.Language(Tomorrow);
+IF D=0 THEN GOTO 1 On.Sleep.Routine.Next
+}
