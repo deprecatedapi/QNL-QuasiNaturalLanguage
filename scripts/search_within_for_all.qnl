@@ -1,1 +1,13 @@
-SearchWithin() for '*'; send to background; RunWhile Sleeping; print-results OnWaking
+sleep();
+dreams = List.new
+while(sleeping == true) {
+    dreams << SearchWithin();
+}.attach_eventObserver(:onWaking)
+
+.eventObserver(:onWaking) {
+   dreams.each as |dream|
+       remember dream.elementals
+       remember dream.details
+       remember dream.toL_id
+   end
+}
